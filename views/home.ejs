@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="newstyle.css">
+</head>
+
+<body>
+  <video id="bannervid" autoplay muted src="./videos/BannerVidMid.mp4"></video>
+  <div id="banner">
+    <div class="overlay"></div>
+    <div class="bannertext">
+      <h1>Read The room</h1>
+      <h2>Book Club</h2>
+    </div>
+    <section id="section07" class="demo">
+      <a href="#mainSection"><span></span><span></span><span></span>Scroll</a>
+    </section>
+  </div>
+
+  <div id="mainSection">
+    <div id="bookgallery">
+      <% for (const book of Object.entries(bookjson)) {%>
+        <% console.log(book[1].imageLinks[0]) %>
+          <div class="mobile-layout">
+            <div class="book-cover">
+              <h3>
+                <%= book[1].month %>
+              </h3>
+              <img class="book-top" src="<%= book[1].imageLinks.svg %>" alt="book-top" />
+              <img class="book-side"
+                src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg"
+                alt="book-side" />
+            </div>
+            <div class="preface">
+              <div class="title">
+                <%= book[1].title %>
+              </div>
+              <div class="author">
+                <%= book[1].authors[0] %>
+              </div>
+              <div class="body">
+                <p>
+                  <%= book[1].description %>
+                </p>
+
+                <h5> <a id="booklink" href="/book/<%= book[0] %>">More...</a></h5>
+              </div>
+            </div>
+          </div>
+
+          <% } %>
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer>Prototype V2 Jayson</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+.div {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #22333B;
+    color: #EAE0D5;
+    transition: all 2s;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.1em;
+    padding-top: 30px;
+}
+
+footer {
+    text-align: right;
+    padding: 30px;
+}
+
+#startDiv {
+    height: 300px;
+    max-height: 100vh;
+    background-color: #22333B;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bookShelf {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0A0908;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+    border-radius: 10px;
+}
+
+.bookDiv {
+    transition: 1s ease-in-out;
+    display: flex;
+    min-width: 225px;
+    width: 225px;
+    height: 350px;
+    border-radius: 50%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-size: contain;
+    margin: 15px 10px;
+    opacity: .9;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.bookDiv:hover {
+    transition: 1s ease-in-out;
+    background-color: black;
+    transform: scale(1.1);
+
+
+
+}
+
+button {
+    padding: 15px;
+    cursor: pointer;
+
+    color: #EAE0D5;
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-bottom: 10px;
+    background-color: #22333B;
+    border-radius: 10%;
+    border-color: #EAE0D5;
+    display: block;
+}
+
+a.img {
+    display: block;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.hide {
+    transition: 1s ease-in-out;
+    opacity: .15;
+}
+
+img.main {
+    transition: 1s ease-in-out;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    border-radius: 10%;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bannertext{
+position: relative;
+top: 50vh;
+text-align: center;
+
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: linear-gradient(to bottom, rgba(34,35,46,0.75) 50%, rgba(34,35,46));
+  }
+
+  #banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }

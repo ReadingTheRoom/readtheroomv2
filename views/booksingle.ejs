@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    </title>
+    <link rel="stylesheet" href="/newstyle.css">
+
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+
+    <div id="bodymembersbook">
+        <h1>
+            <%= member %>'s Choice of <%= month %>
+        </h1>
+
+        <div class="titletext">
+            <h2>
+                <%= title %>
+            </h2>
+        </div>
+        <div id="" class="membersbook">
+
+
+            <div id="flexcontainer">
+                <div class="flexleft">
+                    <img class="hidden" src="<%= imageLinks.cover %>">
+                    <div class="bookcontainer">
+                        <div class="containerbook">
+                            <div class="containerfront">
+                                <div class="containercover">
+                                    <span class="containerrank"><a href="#membercomments">
+                                            <%= locals.avgrank %>
+                                        </a>⭐</span>
+                                    <img src="<%= imageLinks.cover %>">
+                                    <p class=containerauthor>
+                                        <%= authors[0] %>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="containerleft-side">
+                                <h2>
+
+                                    <span>
+                                        <%= title %>
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexright">
+                    <div>
+                        <h5>
+                            <%= authors[0 ] %>
+                        </h5>
+                        </h6>
+                        <%= publishedDate %>
+                            </h6>
+                    </div>
+
+                    <p>
+                        <%= description %>
+                    </p>
+                    <a href="<%=dllink%>">
+                        <p id="download">Download</p>
+                    </a>
+                    <h5><a href="/#mainSection">Back to Gallery</a></h5>
+
+
+                </div>
+            </div>
+
+            <div id="membercomments">
+                <p class="subheader">Reading the room</p>
+                <% let total=0 %>
+                    <% if (comments) { for( let comment of comments) { %>
+
+                        <div class="memcomment">
+                            <h5>
+                                <%= comment.member %>
+                            </h5>
+                            <div class="rankedcomment">
+                                <h6>
+                                    <%= comment.rank %> ⭐
+                                </h6>
+                                <p>
+                                    <%= comment.comment %>
+                                </p>
+                            </div>
+                        </div>
+
+                        <% }} %>
+            </div>
+            <footer>Prototype V2 Jayson</footer>
+        </div>
+
+</body>
+
+</html>

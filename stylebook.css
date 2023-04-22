@@ -1,0 +1,90 @@
+    body {
+        background-color: #5E503F;
+        text-align: center;
+        color: #EAE0D5;
+        font-weight: 300;
+
+    }
+
+    nav {
+        background-color: #5E503F;
+        padding: 15px 30px;
+        text-align: left;
+
+    }
+
+    #bookContainer {
+        background-color: #C6AC8F;
+        color: #22333B;
+        align-items: center;
+
+        display: flex;
+        padding: 20px 50px;
+        margin: 5% 8%;
+        border-radius: 20px;
+
+    }
+
+    #rightcol {
+        padding: 20px;
+        margin: 0 10px;
+        max-width: 50%;
+    }
+
+    #leftcol {
+        padding: 20px;
+        max-width: 65%;
+        text-align: left;
+
+    }
+
+    p {
+        padding: 20px 0px;
+        font-weight: 100;
+    }
+
+
+    #monthTitle {
+        padding: 30px 0;
+        font-weight: 200;
+    }
+
+    img {
+        width: 100%;
+        opacity: .9;
+    }
+
+    @media (max-width: 1200px) {
+        body {}
+
+        #bookContainer {
+            margin: 0;
+        }
+
+        #leftcol {
+            max-width: 50%;
+        }
+    }
+
+    @media (max-width: 700px) {
+        body {
+            background-color: #5E503F;
+        }
+
+        #leftcol {
+            max-width: 100%;
+        }
+
+        #bookContainer {
+            background-color: #22333B;
+            color: #EAE0D5;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 20px;
+
+        }
+
+        button {
+            margin-left: 40%;
+        }
+    }
