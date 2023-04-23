@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
+        <%= title %>
     </title>
     <link rel="stylesheet" href="/newstyle.css">
 
@@ -13,7 +14,9 @@
 
 <body>
     <nav>
-
+        <ul>
+            <li><a href="/"><img src="/images/home-icon.svg" alt="" srcset=""></a></li>
+        </ul>
     </nav>
 
     <div id="bodymembersbook">
@@ -97,10 +100,16 @@
                             </div>
                         </div>
 
-                        <% }} %>
+                        <% }} else{ %>
+
+                            <div class="memcomment">
+                                <h5>Reviews to come...</h5>
+                            </div>
+
+                            <% }%>
             </div>
-            <footer>Prototype V2 Jayson</footer>
         </div>
+        <footer>Prototype V2 Jayson</footer>
 
 </body>
 

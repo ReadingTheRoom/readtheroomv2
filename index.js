@@ -42,7 +42,7 @@ app.get('/book/:id', (req, res) => {
             total += m.rank;
         }
 
-        let avgrank = (total / comments.length).toFixed(2);
+        let avgrank = (total / comments.length).toFixed(1);
         console.log(total)
         res.render('booksingle', { ...book, comments, avgrank })
     }
