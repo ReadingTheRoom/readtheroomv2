@@ -75,13 +75,12 @@
             "Biography & Autobiography"
         ],
         "imageLinks": {
-            "svg": "./images/foreskinvector.svg",
+            "svg": "./images/paulvector2.svg",
             "smallThumbnail": "http://books.google.com/books/content?id=lkSQEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
             "thumbnail": "http://books.google.com/books/content?id=lkSQEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "cover": "https://covers.openlibrary.org/b/id/13378915-L.jpg"
         },
         "month": "May",
-        "member": "Mulli",
-        "dllink": "https://drive.google.com/drive/folders/1EYPiL65DALOSCWcJUe8d4i1IisSqC5m3?usp=sharing"
+        "member": "Mulli"
     }
 }

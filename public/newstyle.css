@@ -378,7 +378,7 @@ footer {
 .mobile-layout {
   width: var(--mobile-width);
   height: var(--mobile-height);
-  margin: 30px 0;
+  margin: 30px 30px;
   border-radius: var(--mobile-radius);
   perspective: 500px;
   overflow: hidden;
@@ -411,6 +411,7 @@ footer {
 .book-top {
   width: 170px;
   border-radius: 5px;
+  background-color: var(--bg);
   position: absolute;
   top: 180px;
   left: 250px;
@@ -420,9 +421,9 @@ footer {
 
 .book-side {
   position: absolute;
-  top: 430px;
-  left: 222px;
-  transform: translateY(-15px) translateX(0px) translateZ(15px) rotateX(104deg);
+  top: 435px;
+  left: 220px;
+  transform: translateY(-15px) translateX(0px) translateZ(15px) rotateX(102deg);
 }
 
 .mobile-layout:hover {
@@ -842,13 +843,18 @@ nav li img {
 
 .rankedcomment p {}
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
   #bodymembersbook {
     margin: 0px;
   }
 
   .membersbook {
     margin: 0px;
+  }
+
+  .mobile-layout {
+    margin: 30px 0px;
+
   }
 
   .titletext {
