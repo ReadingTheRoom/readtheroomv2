@@ -75,12 +75,33 @@
             "Biography & Autobiography"
         ],
         "imageLinks": {
-            "svg": "./images/paulvector2.svg",
+            "svg": "./images/foreskinvector.svg",
             "smallThumbnail": "http://books.google.com/books/content?id=lkSQEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
             "thumbnail": "http://books.google.com/books/content?id=lkSQEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "cover": "https://covers.openlibrary.org/b/id/13378915-L.jpg"
         },
         "month": "May",
-        "member": "Mulli"
+        "member": "Mulli",
+        "dllink": "https://drive.google.com/drive/folders/1EYPiL65DALOSCWcJUe8d4i1IisSqC5m3?usp=sharing"
+    },
+    "45ef71e8-0199-419d-8d8d-34833274522f": {
+        "title": "Empire of Pain",
+        "authors": [
+            "Patrick Radden Keefe"
+        ],
+        "publishedDate": "2021",
+        "description": "The inspiration behind the Netflix TV series Painkillers, starring Uzo Aduba and Matthew Broderick.Amazon's Top 20 Best Books of the Year'This is no dense medical tome, but a page-turner with a villainous family to rival the Roys in Succession, and one where every chapter ends with the perfect bombshell.' EsquireThe highly-anticipated portrait of three generations of the Sackler family, by the prize-winning, bestselling author of Say Nothing. The Sackler name adorns the walls of many storied institutions - Harvard; the Metropolitan Museum of Art; Oxford; the Louvre. They are one of the richest families in the world, known for their lavish donations in the arts and the sciences. The source of the family fortune was vague, however, until it emerged that the Sacklers were responsible for making and marketing Oxycontin, a blockbuster painkiller that was a catalyst for the opioid crisis-an international epidemic of drug addiction which has killed nearly half a million people. In this masterpiece of narrative reporting and writing, Patrick Radden Keefe exhaustively documents the jaw-dropping and ferociously compelling reality. Empire of Pain is the story of a dynasty: a parable of 21st century greed.WINNER OF THE BAILLIE GIFFORD PRIZE FOR NON-FICTION 2021 SHORTLISTED FOR THE FT & MCKINSEY BUSINESS BOOK OF THE YEAR AWARD 2021ONE OF BARACK OBAMA'S FAVOURITE BOOKS OF 2021PRAISE FOR EMPIRE OF PAIN'In this mesmerizing history of the Sackler Family-the founders and masterminds behind OxyContin-Radden Keefe spins a shocking and edifying story of ambition, power, deception, and greed that reads like fiction.' Al Woodworth, Senior Editor at Amazon (Amazon's Top 20 Best Books of the Year) 'The story of the Sacklers and OxyContin is a parable of the modern era of philanthropy being deployed to burnish the reputations of financiers and entrepreneurs . . . [A] tour-de-force' - Financial Times'There are so many \"they did what?\" moments in this book, when your jaw practically hits the page' - Sunday Times'Put simply, this book will make your blood boil....a devastating portrait of a family consumed by greed and unwilling to take the slightest responsibility or show the least sympathy for what it wrought....a highly readable and disturbing narrative.' John Carreyrou, bestselling author of Bad Blood'Empire of Pain reads like a real-life thriller, a page-turner, a deeply shocking dissection of avarice and calculated callousness... It is the measure of great and fearless investigative writing that it achieves retribution where the law could not....Exhaustively researched and written with grace and gravity, Empire of Pain unpeels a most terrible American scandal. You feel almost guilty for enjoying it so much.' - The Times (London)'An engrossing and deeply reported book about the Sackler family, the owners of Purdue Pharma. Their company created Oxycontin, the opioid introduced in the mid-90s that sent a wave of addiction and death across the country. Unlike previous books on the epidemic, Empire of Pain is focused on the wildly rich, ambitious and cutthroat family that built its empire first on medical advertising and later on painkillers. In his hands, their story becomes a great American morality tale about unvarnished greed dressed in ostentatious philanthropy.' - The New York Times'A brutal, multigenerational treatment of the Sackler family... Keefe deepens the narrative by tracing the family's ambitions and ruthless methods back to the founding patriarch, Arthur Sackler...His life might be a model for the American dream, if it hadn't arguably laid the foundations for a still-unfolding national tragedy.' - NPR",
+        "pageCount": 560,
+        "categories": [
+            "True Crime"
+        ],
+        "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=5SEkzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=5SEkzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "cover": "https://covers.openlibrary.org/b/id/12535537-L.jpg"
+        },
+        "month": "June",
+        "member": "Shane",
+        "dllink": "https://drive.google.com/drive/folders/1Nh5FCqlWFF6vb24ZzIzgHRScPguSNqlu?usp=share_link"
     }
 }

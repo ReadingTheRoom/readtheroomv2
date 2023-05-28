@@ -320,16 +320,29 @@ body {
 #mainSection {
   animation: none;
   height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(34, 51, 59, 1) 35%);
+}
+
+#mainSection h2 {
+  text-align: center;
+  color: white;
+  padding-top: 500px;
 }
 
 #bookgallery {
   border-radius: 5px;
-  margin: 10% 5%;
+  max-width: 900px;
   padding: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   height: auto;
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--secondary);
   flex-wrap: wrap;
 }
 
@@ -378,13 +391,13 @@ footer {
 .mobile-layout {
   width: var(--mobile-width);
   height: var(--mobile-height);
-  margin: 30px 30px;
+  margin: 30px 10px;
   border-radius: var(--mobile-radius);
   perspective: 500px;
   overflow: hidden;
   color: var(--font-color);
-  background-color: var(--mobile-bg);
-  box-shadow: 36px 36px 50px 15px #eed7d1d1;
+  background-color: rgba(223, 223, 223, 0.178);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.5);
 }
 
 
@@ -395,7 +408,6 @@ footer {
   left: -52.5%;
   border-top-left-radius: var(--mobile-radius);
   border-top-right-radius: var(--mobile-radius);
-  background-color: var(--background);
   transform-style: preserve-3d;
   transform-origin: 50% 40%;
   transition: var(--transition);
@@ -406,12 +418,13 @@ footer {
   padding-top: 40px;
   text-align: center;
   font-size: 2rem;
+  color: white;
 }
 
 .book-top {
   width: 170px;
   border-radius: 5px;
-  background-color: var(--bg);
+  background-color: #d1c889;
   position: absolute;
   top: 180px;
   left: 250px;
@@ -613,23 +626,13 @@ nav li img {
 }
 
 .flexleft * {
-  height: 100% !important;
-
   grid-area: 1 /1/ 2/ 2;
 }
 
 .flexleft {
   display: grid;
-  justify-content: center
-}
-
-.flexleft img {
-  min-width: 250px;
-  height: auto;
-  width: 100%;
-  max-width: 400px;
-  min-height: 395px;
-
+  justify-content: center;
+  align-items: center;
 }
 
 #download {
@@ -680,7 +683,12 @@ nav li img {
 }
 
 
-
+.singleCover {
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  box-shadow: 1px 0px 20px 5px rgb(0 0 0 / 71%);
+}
 
 /* Gives book spine look */
 .bookcontainer .containercover:after {
@@ -750,31 +758,34 @@ nav li img {
 
 
 #bodymembersbook {
-  margin: 0 100px;
-  padding: 100px 0;
-  background-color: var(--background);
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
   color: var(--primary);
   text-align: right;
 }
 
 .membersbook {
-  margin: 0px 100px;
+  margin-top: 100px;
+
   padding: 0 70px;
   background-color: var(--secondary);
+  box-shadow: 0 20px 40px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
 }
 
 #bodymembersbook h1 {
   text-align: center;
+  color: ivory;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .titletext {
   position: relative;
   text-align: center;
-  margin: 100px 100px -19px;
-  padding: 60px 100px 60px 0;
-  background-color: var(--primary);
   color: var(--secondary);
-  text-align: right;
 }
 
 
@@ -809,15 +820,20 @@ nav li img {
   display: flex;
   flex-direction: column;
   padding-bottom: 200px;
+  align-items: center;
+
 }
 
 .memcomment {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
+  max-width: 60%;
   padding: 40px 50px;
   text-align: right;
-  background-color: var(--background);
+  background-color: #c6ac8f47;
+  box-shadow: 2px -1px 18px 2px rgb(0 0 0 / 54%);
+
 
   border-radius: 10px;
 
@@ -845,12 +861,10 @@ nav li img {
 
 @media screen and (max-width: 850px) {
   #bodymembersbook {
-    margin: 0px;
+    padding: 0px;
   }
 
-  .membersbook {
-    margin: 0px;
-  }
+
 
   .mobile-layout {
     margin: 30px 0px;
@@ -878,7 +892,6 @@ nav li img {
 
 @media screen and (max-width: 1280px) {
   #bodymembersbook {
-    margin: 0px;
     padding-top: 150px;
   }
 

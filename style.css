@@ -249,7 +249,7 @@ img.main {
     border-radius: 10%;
 }
 
-video{
+video {
     position: absolute;
     top: 0;
     left: 0;
@@ -258,26 +258,26 @@ video{
     object-fit: cover;
 }
 
-.bannertext{
-position: relative;
-top: 50vh;
-text-align: center;
+.bannertext {
+    position: relative;
+    top: 50vh;
+    text-align: center;
 
 
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-image: linear-gradient(to bottom, rgba(34,35,46,0.75) 50%, rgba(34,35,46));
-  }
+    background-image: linear-gradient(to bottom, rgba(34, 35, 46, 0.75) 50%, rgba(34, 35, 46));
+}
 
-  #banner{
+#banner {
     width: 100%;
     height: 100vh;
     position: relative;
-  }
+}
