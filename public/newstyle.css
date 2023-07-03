@@ -161,7 +161,7 @@ video {
 
 .bannertext {
   color: white;
-  animation: fadeIn 13s;
+  animation: fadeIn 6s;
   position: relative;
   top: 50vh;
   text-align: center;
@@ -174,7 +174,7 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  animation: fade 8s;
+  animation: fade 4s;
   background: rgba(0, 0, 0, 0.90);
 }
 
@@ -215,7 +215,7 @@ html {
 }
 
 #section07 {
-  animation: fadeIn 13s;
+  animation: fadeIn 6s;
   position: relative;
   width: 100%;
   height: 100%;
@@ -267,50 +267,6 @@ html {
   box-sizing: border-box;
 }
 
-#section07 a span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-
-#section07 a span:nth-of-type(2) {
-  top: 16px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
-}
-
-#section07 a span:nth-of-type(3) {
-  top: 32px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
-}
-
-@-webkit-keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
 
 body {
   background-color: var(--primary);
@@ -320,11 +276,6 @@ body {
 #mainSection {
   animation: none;
   height: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(34, 51, 59, 1) 35%);
 }
 
@@ -335,15 +286,56 @@ body {
 }
 
 #bookgallery {
+  margin: auto;
   border-radius: 5px;
-  max-width: 900px;
+  max-width: 800px;
   padding: 50px;
   padding-top: 100px;
+  max-height: 1600px;
   padding-bottom: 100px;
   height: auto;
+  overflow: scroll;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  overflow-y: hidden;
+  position: relative;
+  overflow-x: hidden;
+  align-content: flex-start;
+  flex-direction: row;
+  position: relative;
+  scroll-behavior: auto;
+
+  gap: 2em;
+}
+
+
+#bookgallery-parents {}
+
+
+.bookgalleryover {
+  content: " ";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.274);
+  height: 640px;
+  width: 30%;
+  display: inline-block;
+  margin-top: 130px;
+  z-index: 3;
+  backdrop-filter: blur(1px);
+  padding: 20px;
+}
+
+
+.gallery-left {
+  left: 0;
+  border-bottom-right-radius: 20%;
+  border-top-right-radius: 20%;
+}
+
+.gallery-right {
+  right: 0;
+  border-bottom-left-radius: 20%;
+  border-top-left-radius: 20%;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -398,6 +390,7 @@ footer {
   color: var(--font-color);
   background-color: rgba(223, 223, 223, 0.178);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
 }
 
 

@@ -13,11 +13,18 @@ const reviews = {
     { member: "Toby", rank: 3.5, comment: "Glad I read it, I found alot of elements of it satisfying. Defiantly changed my perception, it wasn't factually correct. Probably should have paid more attention to that. There is alot of elements you could imagine happen in real life especially around Inquisition it was well written and you could image it could be written in " }],
     "8f9a8ca1-6ea4-4592-b0c8-6d88e02a9dfb": [{ member: "Ethan", rank: 3, comment: "" }, { member: "Lachlan", rank: 1, comment: "" }, { member: "Harry", rank: 2, comment: "" }, { member: "Shane", rank: 1, comment: "" }, { member: "Riley", rank: 3, comment: "" }, { member: "Jayson", rank: 1.5, comment: "" }, { member: "Toby", rank: 1.5, comment: "" }, { member: "Mulli", rank: 2, comment: "" }],
     "b7b0f2c3-970e-4641-8257-f8de288a0631": [{ member: "Ethan", rank: 2.5, comment: "" }, { member: "Lachlan", rank: 2.5, comment: "" }, { member: "Harry", rank: 5, comment: "" }, { member: "Shane", rank: 3.5, comment: "" }, { member: "Riley", rank: 3.5, comment: "" }, { member: "Jayson", rank: 5, comment: "" }, { member: "Toby", rank: 4.5, comment: "" }, { member: "Mulli", rank: 4.5, comment: "" }],
+    "6f7f9d17-eb3a-480b-9203-11ab57bf750e": [{ member: "Ethan", rank: 3.5, comment: "I wish there was an uncut version of this book. I have never before read a book that the main theme of it is a character burning sex toys in the backyard. I do think he is a bit of a tool but I think that its more interesting. If I wanted to read a boring white page I'd read when breath becomes air" }, { member: "Lachlan", rank: 0, comment: "Auto-biographies are not for me. Id explore jewish culture further just not through this" }, { member: "Harry", rank: 3, comment: "Sometimes the writing style reminded me he was just spitting out memories trying to deal with the trauma that had happened. But some of the times when it jumped forward to give context to the story he was telling. The last book was a positive sad but this was more I felt sad for him with a unique insight into how it so deeply affected his whole life" }, { member: "Shane", rank: 1.5, comment: "This discussion has boosted my rating from 1 to 1.5. It made me re-think how to read it but ultimatley the extra perspective on something foreign to me was interestng but as brenno said I would rather just read about it. I couldn't get past the main character and I couldn't buy his viewpoints" }, { member: "Riley", rank: 2, comment: "I thought this was the saddest book we read. It was an interesting view of someone with a severe trauma, I think it wold have been way better as a fiction book." }, { member: "Jayson", rank: 2, comment: "" }, { member: "Toby", rank: 3.5, comment: "" }, { member: "Mulli", rank: 2.5, comment: "I like the sarcastic tone intially but I did get a bit tired of it. I just think a book of that length in that tone wore me down after a while of it. I think similar to Ethan I think it was very authentic but there are people out there like this" }],
+
 
 
 };
 
+const newestFirstBooks = [];
 
+for (var i in bookjson)
+    newestFirstBooks.push([i, bookjson[i]]);
+
+newestFirstBooks.reverse()
 
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: true }))
@@ -32,7 +39,7 @@ app.listen(3000, () => {
 
 
 app.get('/', (req, res) => {
-    res.render('home', { bookjson })
+    res.render('home', { newestFirstBooks })
 })
 
 app.get('/book/:id', (req, res) => {
