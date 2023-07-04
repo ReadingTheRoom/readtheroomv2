@@ -1,0 +1,10 @@
+{
+  version: 1,
+  mediaFileName: 'BannerVidMid.mp4',
+  cutSegments: [
+    {
+      start: 3.328368634308511,
+      name: '',
+    },
+  ],
+}
