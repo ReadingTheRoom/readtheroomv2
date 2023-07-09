@@ -302,46 +302,9 @@ body {
   align-content: flex-start;
   flex-direction: row;
   position: relative;
-<<<<<<< HEAD
   scroll-behavior: auto;
 
   gap: 2em;
-=======
-  scroll-behavior: smooth;
-
-  gap: 2em;
-}
-
-
-#bookgallery-parents {}
-
-
-.bookgalleryover {
-  content: " ";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.274);
-  height: 640px;
-  width: 30%;
-  display: inline-block;
-  margin-top: 130px;
-  z-index: 3;
-  backdrop-filter: blur(1px);
-  padding: 20px;
-}
-
-
-.gallery-left {
-  left: 0;
-  border-bottom-right-radius: 20%;
-  border-top-right-radius: 20%;
-}
-
-.gallery-right {
-  right: 0;
-  border-bottom-left-radius: 20%;
-  border-top-left-radius: 20%;
-
->>>>>>> fc3e7a0e560264abd2faff3314f003c8e1c64e7c
 }
 
 

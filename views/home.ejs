@@ -92,19 +92,11 @@
 
 
   hoverPartLeft.addEventListener(event, function () {
-<<<<<<< HEAD
     idx = setInterval(() => scrollPart.scrollLeft -= 1, 3);
   });
 
   hoverPart.addEventListener(event, function () {
     idx = setInterval(() => scrollPart.scrollLeft += 1, 3);
-=======
-    idx = setInterval(() => scrollPart.scrollLeft -= 10, 100);
-  });
-
-  hoverPart.addEventListener(event, function () {
-    idx = setInterval(() => scrollPart.scrollLeft += 5, 50);
->>>>>>> fc3e7a0e560264abd2faff3314f003c8e1c64e7c
   });
 
   stopEvents.forEach(event => hoverPartLeft.addEventListener(event, function () {
