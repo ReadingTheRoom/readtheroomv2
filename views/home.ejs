@@ -44,19 +44,21 @@
                 alt="book-side" />
             </div>
             <div class="preface">
+
               <div class="title">
                 <%= book[1].title %>
               </div>
               <div class="author">
                 <%= book[1].authors[0] %>
               </div>
-              <div class="body">
-                <p>
-                  <%= book[1].description %>
-                </p>
+              <a class="booklink" href="/book/<%= book[0] %>">
+                <div class="body">
+                  <p>
+                    <%= book[1].description %>
+                  </p>
+                </div>
+              </a>
 
-                <h5> <a id="booklink" href="/book/<%= book[0] %>">More...</a></h5>
-              </div>
             </div>
           </div>
 
@@ -90,11 +92,11 @@
 
 
   hoverPartLeft.addEventListener(event, function () {
-    idx = setInterval(() => scrollPart.scrollLeft -= 3, 15);
+    idx = setInterval(() => scrollPart.scrollLeft -= 1, 3);
   });
 
   hoverPart.addEventListener(event, function () {
-    idx = setInterval(() => scrollPart.scrollLeft += 4, 20);
+    idx = setInterval(() => scrollPart.scrollLeft += 1, 3);
   });
 
   stopEvents.forEach(event => hoverPartLeft.addEventListener(event, function () {

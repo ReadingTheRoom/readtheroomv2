@@ -104,5 +104,23 @@
         "month": "June",
         "member": "Shane",
         "dllink": "https://drive.google.com/drive/folders/1Nh5FCqlWFF6vb24ZzIzgHRScPguSNqlu?usp=share_link"
+    },
+    "a39d330c-56f9-49dd-9911-8b27307c0daf": {
+        "title": "The Dreaming Path",
+        "authors": [
+            "Paul Callaghan"
+        ],
+        "publishedDate": "2022",
+        "description": "Tired of going around in circles? The Dreaming Path has always been there, but in the modern-day world, it can be hard to find. There are so many demands on us - family, health, bills, a mortgage, a career - that it can be hard to remember what's most important: you. It's time to reconnect with your story. Through conversations, exercises, Dreaming stories and key messages, in The Dreaming Path Paul Callaghan and Uncle Paul Gordon share knowledge that reveals the power of Aboriginal spirituality as a profound source of contentment and wellbeing for anyone willing to listen...",
+        "pageCount": 320,
+        "imageLinks": {
+            "svg": "./images/dreamingpathvector.svg",
+            "smallThumbnail": "http://books.google.com/books/content?id=ZRnKzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=ZRnKzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY4fbCYR_9rA_X7-OlnGu3wO7dW3K5KM41JsfarQEPii3UWWluVPhgrmwkFCxGTr8GCww&usqp=CAU"
+        },
+        "month": "July",
+        "member": "Evans",
+        "dllink": "#"
     }
 }
