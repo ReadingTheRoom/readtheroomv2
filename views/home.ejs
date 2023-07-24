@@ -6,20 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Read The Room</title>
-  <link rel="stylesheet" href="newstyle.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
   <video id="bannervid" autoplay muted src="./videos/BannerVidMidCut.mp4"></video>
   <div id="banner">
-    <div class="overlay"></div>
-    <div class="bannertext">
+    <div class="banner-overlay"></div>
+    <div class="banner-text">
       <h1>Read The room</h1>
       <h2>Book Club</h2>
     </div>
-    <section id="section07" class="demo">
-      <a href="#mainSection"><span></span><span></span><span></span>Scroll</a>
-    </section>
   </div>
 
   <div id="mainSection">
@@ -33,35 +30,39 @@
 
 
         <% newestFirstBooks.forEach(book=> {%>
-          <div class="mobile-layout">
-            <div class="book-cover">
-              <h3>
-                <%= book[1].month %>
-              </h3>
-              <img class="book-top" src="<%= book[1].imageLinks.svg %>" alt="book-top" />
-              <img class="book-side"
-                src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg"
-                alt="book-side" />
-            </div>
-            <div class="preface">
+          <a class="booklink" href="/book/<%= book[0] %>">
+            <div class="mobile-layout">
 
-              <div class="title">
-                <%= book[1].title %>
+
+              <div class="book-cover">
+                <h3>
+                  <%= book[1].month %>
+                </h3>
+                <img class="book-top" src="<%= book[1].imageLinks.svg %>" alt="book-top" />
+                <img class="book-side"
+                  src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg"
+                  alt="book-side" />
               </div>
-              <div class="author">
-                <%= book[1].authors[0] %>
-              </div>
-              <a class="booklink" href="/book/<%= book[0] %>">
+              <div class="preface">
+
+                <div class="title">
+                  <%= book[1].title %>
+                </div>
+                <div class="author">
+                  <%= book[1].authors[0] %>
+                </div>
+
                 <div class="body">
                   <p>
                     <%= book[1].description %>
                   </p>
                 </div>
-              </a>
+
+              </div>
+
 
             </div>
-          </div>
-
+          </a>
           <% }) %>
 
 
