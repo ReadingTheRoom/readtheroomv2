@@ -741,6 +741,7 @@ nav li img {
   flex-direction: column;
   text-align: right;
   justify-content: space-between;
+  overflow: visible;
 }
 
 .flexright p {

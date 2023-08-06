@@ -122,5 +122,26 @@
         "month": "July",
         "member": "Evans",
         "dllink": "https://drive.google.com/drive/folders/14mrtP4U6bQ2vXU0lfM70_oizExAEPOOz?usp=sharing"
+    },
+    "ef178dc5-528f-4a51-836a-b059a7f56810": {
+        "title": "The Spy who Came in from the Cold",
+        "authors": [
+            "John Le Carré"
+        ],
+        "publishedDate": "2009",
+        "description": "In the shadow of the newly erected Berlin Wall, Alec Leamas watches as his last agent is shot dead by East German sentries. For Leamas, the head of Berlin Station, the Cold War is over. As he faces the prospect of retirement or worse—a desk job—Control offers him a unique opportunity for revenge. Assuming the guise of an embittered and dissolute ex-agent, Leamas is set up to trap Mundt, the deputy director of the East German Intelligence Service—with himself as the bait. In the background is George Smiley, ready to make the game play out just as Control wants Setting a standard that has never been surpassed, The Spy Who Came in from the Cold is a devastating tale of duplicity and espionage",
+        "pageCount": 240,
+        "categories": [
+            "Cold War"
+        ],
+        "imageLinks": {
+            "svg": "./images/thespyvector.svg",
+            "smallThumbnail": "http://books.google.com/books/content?id=R4I7PgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=R4I7PgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "cover": "https://cdn2.penguin.com.au/covers/400/9780241397954.jpg"
+        },
+        "month": "August",
+        "member": "Brenno",
+        "dllink": "https://drive.google.com/drive/folders/1VNzsD2uRt9kZbtygNb0j8bRl8CKCzHUw?usp=sharing"
     }
 }

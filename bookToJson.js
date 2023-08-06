@@ -18,6 +18,7 @@ const bookGen = async function (isbn, month, member) {
     // API get JSON from book ISBN
     const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`);
     const data = await res.json();
+    console.log(data)
     const bookInfo = data.items[0].volumeInfo
     console.log(bookInfo)
     const bookId = uuidv4()
